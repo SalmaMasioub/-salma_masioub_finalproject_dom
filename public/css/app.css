@@ -50171,7 +50171,11 @@ header .btn1 > button:hover {
   color: #6c757d;
 }
 
-.menuSection, .reservationSection, .contactSection {
+h3, .h3, .footer-contact, .footer-col {
+  font-family: playfair display;
+}
+
+.menuSection, .reservationSection, .contactSection, footer {
   background-color: #0c0b09;
 }
 
@@ -50229,6 +50233,25 @@ input[type=date]::placeholder {
 
 .v2 {
   border: 1px solid #cda45e;
+}
+
+.ul-ftr {
+  font-family: open sans;
+  font-size: 13.5px;
+}
+
+.sub {
+  background-color: #cda45e;
+  font-family: open sans;
+  border: 1px solid transparent;
+}
+
+.new {
+  width: fit-content;
+}
+
+.bootstrap {
+  color: #cda45e;
 }
 
 @media (max-width: 428px) {

@@ -139,10 +139,13 @@ border: 4px solid #d28e3698;
 }
 
 
+h3 , .footer-contact, .footer-col{
+  font-family: playfair display
+  ;
+}
 
 
-
-.menuSection , .reservationSection ,.contactSection{
+.menuSection , .reservationSection ,.contactSection , footer{
 background-color: #0c0b09;
 }
 
@@ -207,9 +210,25 @@ color: white !important;
   border:1px solid $gold;
 }
 
+.ul-ftr{
+  font-family: open sans;
+  font-size: 13.5px;
+}
 
+.sub{
+  background-color: $gold;
+  font-family: open sans;
+ border: 1px solid transparent;
+//  padding: 1vh;
+}
 
+.new{
+  width: fit-content;
+}
 
+.bootstrap{
+  color: $gold;
+}
 
 @media (max-width: 428px) {
   .imgAbout{
