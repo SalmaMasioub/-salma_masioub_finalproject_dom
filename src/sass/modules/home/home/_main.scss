@@ -142,7 +142,7 @@ border: 4px solid #d28e3698;
 
 
 
-.menuSection{
+.menuSection , .reservationSection{
 background-color: #0c0b09;
 }
 
@@ -169,6 +169,35 @@ font-weight: bold;
 }
 
 
+
+input[type="number"]::placeholder {
+  color: #1d1d1f !important;
+ 
+}
+
+input[type="date"]::placeholder{
+  color: #1d1d1f !important;
+
+}
+.inputForm::placeholder{
+  font-weight: 480;
+}
+.inputForm:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid $gold !important; 
+}
+
+.btne{
+  border: 1px solid $gold !important;
+}
+
+.btne:hover{
+ 
+background-color: $gold !important;
+color: white !important;
+
+}
 
 @media (max-width: 428px) {
   .imgAbout{

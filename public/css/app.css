@@ -50171,7 +50171,7 @@ header .btn1 > button:hover {
   color: #6c757d;
 }
 
-.menuSection {
+.menuSection, .reservationSection {
   background-color: #0c0b09;
 }
 
@@ -50194,6 +50194,33 @@ header .btn1 > button:hover {
 
 .price {
   color: #cda45e;
+}
+
+input[type=number]::placeholder {
+  color: #1d1d1f !important;
+}
+
+input[type=date]::placeholder {
+  color: #1d1d1f !important;
+}
+
+.inputForm::placeholder {
+  font-weight: 480;
+}
+
+.inputForm:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #cda45e !important;
+}
+
+.btne {
+  border: 1px solid #cda45e !important;
+}
+
+.btne:hover {
+  background-color: #cda45e !important;
+  color: white !important;
 }
 
 @media (max-width: 428px) {
