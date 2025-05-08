@@ -49846,46 +49846,27 @@ h1, .h1 {
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.537254902);
-  padding: 3vh;
-  width: 100%;
-  align-items: center;
-  color: white;
-  position: fixed;
-  z-index: 100;
 }
-header nav {
-  display: flex;
-  gap: 3vh;
-}
-header nav a {
+
+nav a {
   font-size: 2.5vh;
   color: white;
 }
-header nav a:hover {
+nav a:hover {
   color: #CDA45E;
 }
-header label {
-  display: none;
-}
-header .btn1 > button {
-  background-color: transparent;
-  color: white;
+
+.btn1 > button {
   border: 2px solid #CDA45E;
-  border-radius: 15px;
-  padding: 1vh 5vh;
 }
-header .btn1 > button:hover {
-  background-color: #CDA45E;
+
+.btn1 > button:hover {
+  background-color: #CDA45E !important;
 }
 
 @media (max-width: 428px) {
-  header label {
-    display: block;
-  }
-  header nav {
+  nav {
     left: -500vh;
     position: fixed;
     top: 10vh;
@@ -49893,25 +49874,19 @@ header .btn1 > button:hover {
     height: 70vh;
     background-color: #29261f;
     flex-direction: column;
-    align-items: start;
     padding: 5vh;
-    justify-content: center;
     padding-left: 150vh;
     padding-inline: 4vw;
     transition: 0.2s;
   }
-  header nav a {
+  nav a {
     font-size: 4vh;
     color: white;
-  }
-  header .btn1 {
-    display: none;
   }
 }
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
 .flex {
@@ -49980,28 +49955,28 @@ header .btn1 > button:hover {
   background-repeat: no-repeat;
 }
 
-.pading {
+.content1 {
   padding: 30vh 15vh;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.pading a {
+.content1 a {
   color: #cda45e;
 }
-.pading a svg {
+.content1 a svg {
   width: 10vh;
   height: 10vh;
 }
-.pading a:hover {
+.content1 a:hover {
   color: white;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
+.text .phero {
+  font-family: open sans;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.863);
 }
 .text h1, .text .h1 {
   color: white;
@@ -50016,15 +49991,13 @@ header .btn1 > button:hover {
 }
 
 .btn > button {
-  background-color: transparent;
-  color: white;
   border: 2px solid #CDA45E;
   border-radius: 15px;
   padding: 1vh 5vh;
 }
 
 .btn > button:hover {
-  background-color: #CDA45E;
+  background-color: #CDA45E !important;
 }
 
 @media (max-width: 428px) {
@@ -50252,6 +50225,18 @@ input[type=date]::placeholder {
 
 .bootstrap {
   color: #cda45e;
+}
+
+.menuu .col-12 {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menuu .col-12.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  display: none;
 }
 
 @media (max-width: 428px) {

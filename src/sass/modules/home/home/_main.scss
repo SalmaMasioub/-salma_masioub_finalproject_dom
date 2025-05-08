@@ -230,6 +230,29 @@ color: white !important;
   color: $gold;
 }
 
+
+
+
+
+
+.menuu .col-12 {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menuu .col-12.hidden {
+  opacity: 0;
+  transform: translateY(10px); 
+  display: none; 
+}
+
+
+
+
+
+
+
 @media (max-width: 428px) {
   .imgAbout{
     width: 100% ;

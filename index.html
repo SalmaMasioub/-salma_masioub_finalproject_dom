@@ -40,40 +40,42 @@
                 <p>EN <span>/ fr</span></p>
             </div>
         </div>
-        <header id="header">
-            <h1>Restaurantly</h1>
-            <label for="" id="label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        <header id="header"
+            class="d-flex align-items-center  justify-content-around p-lg-2 p-1  w-100 position-fixed z-3">
+            <h1 class="text-white">Restaurantly</h1>
+            <label for="" id="label" class="d-lg-none text-white"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                 </svg></label>
-            <nav id="nav">
-                <label for="" id="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            <nav id="nav " class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start gap-6">
+                <label for="" id="false" class="d-lg-none"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                         <path
                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
                     </svg></label>
-                <a href="">home</a>
-                <a href="">about</a>
-                <a href="">menu</a>
-                <a href="">special</a>
-                <a href="">events</a>
-                <a href="">chefs</a>
-                <a href="">gallery</a>
-                <a href="">dropdown</a>
-                <a href="">contact</a>
+                <a href="" class="text-decoration-none ">Home</a>
+                <a href="" class="text-decoration-none  ">About</a>
+                <a href="" class="text-decoration-none ">Menu</a>
+                <a href="" class="text-decoration-none  ">Special</a>
+                <a href="" class="text-decoration-none  ">Events</a>
+                <a href="" class="text-decoration-none  ">Chefs</a>
+                <a href="" class="text-decoration-none  ">Gallery</a>
+                <a href="" class="text-decoration-none  ">Dropdown</a>
+                <a href="" class="text-decoration-none  ">Contact</a>
             </nav>
             <div class="btn1">
-                <button> BOOK A TABLE</button>
+                <button class="bg-transparent text-secondary  rounded-5 px-2 py-1 d-lg-block d-none phero"> BOOK A TABLE</button>
             </div>
         </header>
-        <div class="pading">
+        
+        <div class="content1 py-30 px-9 d-flex flex-lg-row flex-column">
             <div class="text">
-                <h1>welcome to <span> Restaurantly</span></h1>
-                <p>delivering great food for more than 18 years !</p>
-                <div class="btn">
-                    <button>OUR MENU</button>
-                    <button>BOOK A TABLE</button>
+                <h1 class="fw-bold">Welcome to <span class="fw-bold"> Restaurantly</span></h1>
+                <p class=" fs-8 phero fw-medium">delivering great food for more than 18 years !</p>
+                <div class="btn d-flex align-items-start gap-2">
+                    <button class="rounded-5 text-white  bg-transparent px-4 py-1">OUR MENU</button>
+                    <button class="rounded-5 text-white  bg-transparent px-4 py-1">BOOK A TABLE</button>
                 </div>
             </div>
             <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -188,17 +190,18 @@
 
                 <div class="text-center align-items-center justify-content-center pb-7">
                     <ul class="d-flex align-items-center justify-content-center gap-7 list-unstyled">
-                        <li class="menulst">All</li>
-                        <li class="menulst">Starters</li>
-                        <li class="menulst">Salads</li>
-                        <li class="menulst">Specialty</li>
+                        <li class="menulst" id="all">All</li>
+                        <li class="menulst" id="starters">Starters</li>
+                        <li class="menulst" id="salads">Salads</li>
+                        <li class="menulst" id="specialty">Specialty</li>
                     </ul>
+
                 </div>
 
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row menuu">
                         <!-- Item 1 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex starters all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/lobster-bisque.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -216,7 +219,7 @@
                         </div>
 
                         <!-- Item 2 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex specialty all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/bread-barrel.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -234,7 +237,7 @@
                         </div>
 
                         <!-- Item 3 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex starters all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/cake.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -252,7 +255,7 @@
                         </div>
 
                         <!-- Item 4 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex salads all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/caesar.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -270,7 +273,7 @@
                         </div>
 
                         <!-- Item 5 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex specialty all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/tuscan-grilled.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -289,7 +292,7 @@
                         </div>
 
                         <!-- Item 6 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex starters all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/mozzarella.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -307,7 +310,7 @@
                         </div>
 
                         <!-- Item 7 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex salads all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/greek-salad.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -326,7 +329,7 @@
                         </div>
 
                         <!-- Item 8 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex salads all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/spinach-salad.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -345,7 +348,7 @@
                         </div>
 
                         <!-- Item 9 -->
-                        <div class="col-12 col-md-6 mb-7 d-flex">
+                        <div class="col-12 col-md-6 mb-7 d-flex specialty all">
                             <div class="d-flex w-100 gap-3">
                                 <img src="./public/images/lobster-roll.jpg" alt=""
                                     class="border border-5 border-secondary menuImg">
@@ -368,6 +371,12 @@
 
         </section>
 
+
+
+        <!-- section  -->
+
+
+        
 
         <!-- RESERVATION -->
         <section class="reservationSection">
@@ -420,165 +429,187 @@
         <section class="contactSection ">
 
             <!-- Section Title -->
-           <div class="container py-5">
-            <div >
-                <p class="text-secondary fs-5 fw-medium pWhy">CONTACT</p>
-                <h1 class="hWhy">Contact Us</h1>
-            </div>
-      
-            <div class="mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-      
-            <div class="container aos-init " >
-      
-              <div class="row gy-4">
-      
-                <div class="col-lg-4">
-                  <div class="info-item d-flex align-items-center gap-3 ">
-                    <i class="bi bi-geo-alt flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
-                    <div class="d-flex  justify-content-center flex-column">
-                      <h3 class="text-white">Location</h3>
-                      <p class="text-secondary">A108 Adam Street, New York, NY 535022</p>
-                    </div>
-                  </div>
-      
-                  <div class="info-item d-flex align-items-center gap-3 ">
-                    <i class="bi bi-telephone flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
-                    <div class="d-flex  justify-content-center flex-column">
-                      <h3 class="text-white">Open Hours</h3>
-                      <p class="text-secondary">Monday-Saturday: <br>
-                        11:00 AM - 2300 PM</p>
-                    </div>
-                  </div>
-      
-                  <div class="info-item d-flex align-items-center gap-3 ">
-                    <i class="bi bi-telephone flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
-                    <div class="d-flex  justify-content-center flex-column">
-                      <h3 class="text-white">Call Us</h3>
-                      <p class="text-secondary">+1 5589 55488 55</p>
-                    </div>
-                  </div>
-      
-                  <div class="info-item d-flex align-items-center gap-3 ">
-                    <i class="bi bi-envelope flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
-                    <div class="d-flex  justify-content-center flex-column">
-                      <h3 class="text-white">Email Us</h3>
-                      <p class="text-secondary">info@example.com</p>
-                    </div>
-                  </div>
-      
+            <div class="container py-5">
+                <div>
+                    <p class="text-secondary fs-5 fw-medium pWhy">CONTACT</p>
+                    <h1 class="hWhy">Contact Us</h1>
                 </div>
-      
-                <div class="col-lg-8">
-                  <form >
+
+                <div class="mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <iframe style="border:0; width: 100%; height: 400px;"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                        frameborder="0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="container aos-init ">
+
                     <div class="row gy-4">
-      
-                      <div class="col-md-6">
-                        <input type="text" name="name" class="form-control inputForm v2 bg-transparent rounded-0" placeholder="Your Name" >
-                      </div>
-      
-                      <div class="col-md-6 ">
-                        <input type="email" class="form-control inputForm bg-transparent rounded-0 v2" name="email" placeholder="Your Email" >
-                      </div>
-      
-                      <div class="col-md-12">
-                        <input type="text" class="form-control inputForm bg-transparent rounded-0 v2" name="subject" placeholder="Subject" >
-                      </div>
-      
-                      <div class="col-md-12">
-                        <textarea class="form-control inputForm bg-transparent bg-transparent rounded-0 v2" name="message " rows="6" placeholder="Message" ></textarea>
-                      </div>
-      
-                      <div class="col-md-12 text-center">
-      
-                        <a
-                        class="bg-transparent text-secondary fw-medium py-2 px-3 rounded-5 btne text-decoration-none ">Send Message</a>
-                      </div>
-      
+
+                        <div class="col-lg-4">
+                            <div class="info-item d-flex align-items-center gap-3 ">
+                                <i
+                                    class="bi bi-geo-alt flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
+                                <div class="d-flex  justify-content-center flex-column">
+                                    <h3 class="text-white">Location</h3>
+                                    <p class="text-secondary">A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item d-flex align-items-center gap-3 ">
+                                <i
+                                    class="bi bi-telephone flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
+                                <div class="d-flex  justify-content-center flex-column">
+                                    <h3 class="text-white">Open Hours</h3>
+                                    <p class="text-secondary">Monday-Saturday: <br>
+                                        11:00 AM - 2300 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item d-flex align-items-center gap-3 ">
+                                <i
+                                    class="bi bi-telephone flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
+                                <div class="d-flex  justify-content-center flex-column">
+                                    <h3 class="text-white">Call Us</h3>
+                                    <p class="text-secondary">+1 5589 55488 55</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item d-flex align-items-center gap-3 ">
+                                <i
+                                    class="bi bi-envelope flex-shrink-0 loc text-center d-flex align-items-center justify-content-center h-50 py-2 rounded-1 px-2"></i>
+                                <div class="d-flex  justify-content-center flex-column">
+                                    <h3 class="text-white">Email Us</h3>
+                                    <p class="text-secondary">info@example.com</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="row gy-4">
+
+                                    <div class="col-md-6">
+                                        <input type="text" name="name"
+                                            class="form-control inputForm v2 bg-transparent rounded-0"
+                                            placeholder="Your Name">
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <input type="email" class="form-control inputForm bg-transparent rounded-0 v2"
+                                            name="email" placeholder="Your Email">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control inputForm bg-transparent rounded-0 v2"
+                                            name="subject" placeholder="Subject">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <textarea
+                                            class="form-control inputForm bg-transparent bg-transparent rounded-0 v2"
+                                            name="message " rows="6" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12 text-center">
+
+                                        <a
+                                            class="bg-transparent text-secondary fw-medium py-2 px-3 rounded-5 btne text-decoration-none ">Send
+                                            Message</a>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
-                  </form>
+
                 </div>
-      
-              </div>
-      
             </div>
-           </div>
-      
-          </section>
+
+        </section>
 
 
     </main>
-   
-        <footer id="footer" class="footer border-1 border-secondary border py-5">
 
-            <div class="container footer-top">
-              <div class="row gy-4">
+    <footer id="footer" class="footer border-1 border-secondary border-top py-5 pb-3">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
-                  <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
-                    <h3  class="text-decoration-none text-white">Restaurantly</h3>
-                  </a>
-                  <div class="footer-contact pt-3">
-                    <p class="text-secondary">A108 Adam Street</p>
-                    <p class="text-secondary "> New York, NY 535022</p>
-                    <p class="mt-3 text-secondary"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p class="text-secondary"><strong>Email:</strong> <span>info@example.com</span></p>
-                  </div>
-                  <div class="social-links d-flex mt-4 gap-3 ">
-                    <a href="" class="text-secondary" ><i class="bi bi-twitter-x"></i></a>
-                    <a href="" class="text-secondary"><i class="bi bi-facebook"></i></a>
-                    <a href="" class="text-secondary"><i class="bi bi-instagram"></i></a>
-                    <a href="" class="text-secondary"><i class="bi bi-linkedin"></i></a>
-                  </div>
+                    <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+                        <h3 class="text-decoration-none text-white">Restaurantly</h3>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p class="text-secondary">A108 Adam Street</p>
+                        <p class="text-secondary "> New York, NY 535022</p>
+                        <p class="mt-3 text-secondary"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                        <p class="text-secondary"><strong>Email:</strong> <span>info@example.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4 gap-3 ">
+                        <a href="" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                        <a href="" class="text-secondary"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-        
+
                 <div class="col-lg-2 col-md-3 footer-links footer-col">
-                  <h4 class="text-white fs-5">Useful Links</h4>
-                  <ul class="list-unstyled ul-ftr d-flex flex-column gap-2">
-                    <li ><a class="text-secondary text-decoration-none fw-medium" href="#">Home</a></li>
-                    <li ><a class="text-secondary text-decoration-none fw-medium"  href="#">About us</a></li>
-                    <li ><a class="text-secondary text-decoration-none fw-medium"  href="#">Services</a></li>
-                    <li ><a class="text-secondary text-decoration-none fw-medium"  href="#">Terms of service</a></li>
-                    <li ><a class="text-secondary text-decoration-none fw-medium"  href="#">Privacy policy</a></li>
-                  </ul>
+                    <h4 class="text-white fs-5">Useful Links</h4>
+                    <ul class="list-unstyled ul-ftr d-flex flex-column gap-2">
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Home</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">About us</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Services</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Terms of service</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Privacy policy</a></li>
+                    </ul>
                 </div>
-        
+
                 <div class="col-lg-2 col-md-3 footer-links footer-col">
-                  <h4 class="text-white fs-5">Our Services</h4>
-                  <ul class="list-unstyled ul-ftr  d-flex flex-column gap-2">
-                    <li><a class="text-secondary text-decoration-none fw-medium" href="#">Web Design</a></li>
-                    <li><a class="text-secondary text-decoration-none fw-medium" href="#">Web Development</a></li>
-                    <li><a class="text-secondary text-decoration-none fw-medium" href="#">Product Management</a></li>
-                    <li><a class="text-secondary text-decoration-none fw-medium" href="#">Marketing</a></li>
-                    <li><a class="text-secondary text-decoration-none fw-medium" href="#">Graphic Design</a></li>
-                  </ul>
+                    <h4 class="text-white fs-5">Our Services</h4>
+                    <ul class="list-unstyled ul-ftr  d-flex flex-column gap-2">
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Web Design</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Web Development</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Product Management</a>
+                        </li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Marketing</a></li>
+                        <li><a class="text-secondary text-decoration-none fw-medium" href="#">Graphic Design</a></li>
+                    </ul>
                 </div>
-        
+
                 <div class="col-lg-4 col-md-12 footer-newsletter footer-col gap-2">
-                  <h4 class="text-white fs-5">Our Newsletter</h4>
-                  <p class="text-secondary ul-ftr fw-medium">Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                  <form action="forms/newsletter.php" method="post" class="php-email-form">
-                    <div class="newsletter-form border-secondary border border-1 rounded-1 new"><input type="email" class="inputForm bg-transparent border-0 py-1 rounded-start-1 " name="email"><input type="submit" class="sub text-black py-1 px-2 " value="Subscribe"></div>
-                  </form>
+                    <h4 class="text-white fs-5">Our Newsletter</h4>
+                    <p class="text-secondary ul-ftr fw-medium">Subscribe to our newsletter and receive the latest news
+                        about our products and services!</p>
+                    <form action="forms/newsletter.php" method="post" class="php-email-form">
+                        <div class="newsletter-form border-secondary border border-1 rounded-1 new"><input type="email"
+                                class="inputForm bg-transparent border-0 py-1 rounded-start-1 " name="email"><input
+                                type="submit" class="sub text-black py-1 px-2 " value="Subscribe"></div>
+                    </form>
                 </div>
-        
-              </div>
+
             </div>
-        
-            <div class="container copyright text-center mt-4 fs-10">
-              <p>© <span class="text-secondary">Copyright</span> <strong class="px-1 sitename text-secondary">Restaurantly</strong> <span class="text-secondary">All Rights Reserved</span></p>
-              <div class="credits text-secondary fs-20">
-            
-                Designed by <a href="https://bootstrapmade.com/" class="text-decoration-none bootstrap">BootstrapMade</a>
-              </div>
+        </div>
+
+        <div class="container copyright text-center mt-4 fs-10 border-top border-1 border-secondary ">
+            <p class="pt-3">© <span class="text-secondary">Copyright</span> <strong
+                    class="px-1 sitename text-secondary">Restaurantly</strong> <span class="text-secondary">All Rights
+                    Reserved</span></p>
+            <div class="credits text-secondary fs-20">
+
+                Designed by <a href="https://bootstrapmade.com/"
+                    class="text-decoration-none bootstrap">BootstrapMade</a>
             </div>
-        
-          </footer>
-    
+        </div>
+
+    </footer>
 
 
+    <h1 class="alrt">hello world</h1>
 
-    <script src="./public/js/app.js"></script>
 </body>
+<script src="./public/js/app.js"></script>
+
 
 </html>
