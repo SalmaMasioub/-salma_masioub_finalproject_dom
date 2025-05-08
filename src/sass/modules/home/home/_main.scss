@@ -142,7 +142,7 @@ border: 4px solid #d28e3698;
 
 
 
-.menuSection , .reservationSection{
+.menuSection , .reservationSection ,.contactSection{
 background-color: #0c0b09;
 }
 
@@ -189,7 +189,7 @@ input[type="date"]::placeholder{
 }
 
 .btne{
-  border: 1px solid $gold !important;
+  border: 2px solid $gold !important;
 }
 
 .btne:hover{
@@ -198,6 +198,18 @@ background-color: $gold !important;
 color: white !important;
 
 }
+
+.loc{
+  background-color: $gold;
+}
+
+.v2{
+  border:1px solid $gold;
+}
+
+
+
+
 
 @media (max-width: 428px) {
   .imgAbout{
@@ -208,6 +220,10 @@ color: white !important;
       display: flex;
       justify-content: center;
       margin-bottom: 2vh;
+    }
+
+    .localisation{
+      width: 100%  !important;
     }
 }
 

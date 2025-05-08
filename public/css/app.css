@@ -50171,7 +50171,7 @@ header .btn1 > button:hover {
   color: #6c757d;
 }
 
-.menuSection, .reservationSection {
+.menuSection, .reservationSection, .contactSection {
   background-color: #0c0b09;
 }
 
@@ -50215,12 +50215,20 @@ input[type=date]::placeholder {
 }
 
 .btne {
-  border: 1px solid #cda45e !important;
+  border: 2px solid #cda45e !important;
 }
 
 .btne:hover {
   background-color: #cda45e !important;
   color: white !important;
+}
+
+.loc {
+  background-color: #cda45e;
+}
+
+.v2 {
+  border: 1px solid #cda45e;
 }
 
 @media (max-width: 428px) {
@@ -50231,6 +50239,9 @@ input[type=date]::placeholder {
     display: flex;
     justify-content: center;
     margin-bottom: 2vh;
+  }
+  .localisation {
+    width: 100% !important;
   }
 }
 
