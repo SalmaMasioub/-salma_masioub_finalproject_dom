@@ -1,0 +1,184 @@
+
+.menubtn{
+    background-color: transparent;
+    border: 1px solid $gold;
+    border-radius: $radius;
+
+}
+
+.menubtn:hover{
+   background-color: $gold;
+   color: #FFFFFF;
+
+}
+
+
+
+.restau{
+    color:$gold;
+    font-family: Playfair Display;
+    font-size: 45px;
+
+    
+}
+
+.restau-font{
+    font-family: Playfair Display;
+    font-size: 45px;
+}
+
+.desch2{
+    color: #ffffffc2;
+    font-family: Open Sans;
+    font-size: 19px;
+}
+
+.hero{
+    // position: absolute;
+    z-index: 5 !important;
+}
+
+
+.bi-check2-all{
+  color: $gold;
+}
+
+.aboutUl{
+  list-style: none;
+  li {
+    color: rgb(192, 188, 188);
+    
+  }
+
+ 
+}
+
+.pAbout{
+  color: rgb(192, 188, 188) !important;
+
+}
+
+.aboutSection {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../../../../../public/images/about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;                
+  align-items: center;      
+  justify-content: center;     
+}
+
+.aboutSection::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  position: absolute;
+
+}
+
+.content{
+  position: relative;
+  width: 100%;
+}
+
+.imgAbout{
+width: 35vw;
+border: 4px solid #d28e3698;
+}
+.pWhy{
+  font-family: playfair display;
+
+}
+.pWhy::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: $gold;
+    margin: 4px 10px;
+}
+
+.hWhy{
+  color: $gold;
+  padding-bottom: 10vh;
+ 
+}
+
+
+.card-hover {
+  position: relative; 
+  background-color: rgba(17, 17, 17, 0.466);
+}
+
+.card-hover:hover{
+  transition: 0.2s;
+  background-color: $gold !important;
+  color: black !important;
+  
+}
+
+
+
+.card-content {
+  position: relative; 
+  transition: transform 0.3s ease; 
+
+}
+
+.card-hover:hover .card-content {
+  transform: translateY(-12px); 
+}
+
+
+.pCard{
+  color:#6c757d;
+}
+
+
+
+
+
+.menuSection{
+background-color: #0c0b09;
+}
+
+
+.menulst{
+  color: #7a838b;
+  font-family: playfair display;
+font-weight: bold;
+}
+.menulst:hover{
+  color: $gold;
+}
+
+.menuImg {
+  width: 20%; 
+  height: auto; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+
+.price{
+  color: $gold;
+}
+
+
+
+@media (max-width: 428px) {
+  .imgAbout{
+    width: 100% ;
+    }
+
+    .col-12 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2vh;
+    }
+}
+

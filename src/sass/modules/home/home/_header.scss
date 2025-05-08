@@ -1,0 +1,238 @@
+h1{
+    font-family: playfair display;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00000089;
+    padding: 3vh;
+    width: 100%;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 100;
+    nav{
+        display: flex;
+        gap: 3vh;
+        a{
+            font-size: 2.5vh;
+            color: white;
+        }
+        a:hover{
+            color:#CDA45E ;
+        }
+    }
+    label{
+        display: none;
+    }
+  .btn1>button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CDA45E;
+    border-radius: 15px;
+    padding: 1vh 5vh;
+  }
+      .btn1>button:hover{
+            background-color:#CDA45E ;
+        }
+ 
+}
+@media (max-width: 428px) {
+    header{
+     
+        label{
+            display: block;
+        }
+     
+    nav{
+        
+        left: -500vh;
+        position: fixed;
+        top:10vh;
+        
+        width: 80%;
+        height: 70vh;
+        background-color: #29261f;
+        flex-direction: column;
+        align-items: start;
+     padding: 5vh;
+        justify-content: center;
+        padding-left: 150vh;
+        padding-inline: 4vw ;
+        transition: 0.2s;
+        a{
+            font-size: 4vh;
+            color: white;
+        }
+    }
+    .btn1{
+        display: none;
+    }
+}
+
+}
+ 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2vh 15vh;
+padding-bottom: 5vh;
+
+.div{
+   
+    a{
+        color:#d0cecc;
+        position: absolute;
+        left: 5;
+        display: flex;
+        gap: 1vh;
+        text-align: center;
+        svg{
+            color: #CDA45E;
+        }
+    }
+    a:hover{
+        color: #CDA45E;
+        text-decoration: underline 1px;
+    }
+    #position{
+        svg{
+            color: #CDA45E;
+        }
+        display: flex;
+        gap: 1vh;
+        text-align: center;
+       position: absolute;
+       right: 150vh;
+     
+        color: #d0cecc;
+    }
+    display: flex;
+    gap: 5vh;
+ 
+}
+.p>p{
+  
+    display: flex;
+    position: absolute;
+   
+   font-size: 2vh;
+   padding-bottom: 1vh;
+   color:#CDA45E;
+   span{
+    color: #d0cecc;
+   }
+   }
+}
+.ag::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    position: absolute;
+    transition: 1s;
+  
+
+}
+
+.bg{
+    background-image: url(../../../../../public/images/hero-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.pading{
+    padding: 30vh 15vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #cda45e;
+        svg{
+            width: 10vh;
+            height: 10vh;
+        }
+    
+    }
+    a:hover{
+        color: white;
+    }
+ 
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    h1{
+        color: white;
+        font-size: 8vh;
+
+  
+        span{
+            color: #cda45e;
+        }
+    }
+    p{
+     font-size: 4vh;
+        color: white;
+    }
+}
+.btn>button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CDA45E;
+    border-radius: 15px;
+    padding: 1vh 5vh;
+}
+.btn>button:hover{
+    background-color:#CDA45E ;
+}
+
+@media (max-width: 428px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+  .pading{
+
+    flex-direction: column;
+    padding: 25vh 4vh;
+  }
+  .text{
+    gap: 5vh;
+    h1{
+
+        color: white;
+        font-size: 5vh;
+
+
+
+    }
+    p{
+        font-size: 3vh;
+        text-align: center;
+
+       }
+  }
+  .btn{
+   display: flex;
+   justify-content: center;
+
+  }
+}
