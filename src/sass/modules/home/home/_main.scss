@@ -272,6 +272,77 @@ color: white !important;
 
 
 
+.member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.member img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.member::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.651), transparent);
+  transition: top 0.4s ease;
+  z-index: 1;
+}
+
+.member:hover::before {
+  top: 0;
+}
+
+.member-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; 
+  padding: 20px;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.member:hover .member-info {
+  transform: translateY(0);
+}
+
+.member-info-content {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.member:hover .social {
+  opacity: 1;
+}
+
+.social a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+
+
+
 
 
   
