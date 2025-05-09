@@ -1,3 +1,69 @@
+
+// MODAL
+const modalBtn = document.querySelector(".modal-btn")
+const modalOverlay = document.createElement("div")
+modalOverlay.classList.add("modal-overlay")
+modalOverlay.setAttribute("id", "bookingModalOverlay")
+
+modalOverlay.innerHTML = `  <div class="form-group"><button class="close-modal-btn">&times;</button>
+<input type="text" placeholder="Your Name" required>
+</div>`
+
+document.body.appendChild(modalOverlay)
+
+const closeBtn = modalOverlay.querySelector(".close-modal-btn")
+
+function open() {
+  modalOverlay.classList.add("active")
+  document.body.style.overflow = "hidden"
+}
+
+
+function close() {
+  modalOverlay.classList.remove("active")
+  document.body.style.overflow = ""
+}
+
+modalBtn.addEventListener("click", function (e) {
+  e.preventDefault()
+  open()
+})
+
+
+closeBtn.addEventListener("click", close)
+
+modalOverlay.addEventListener("click", function (e) {
+  if (e.target === modalOverlay) {
+    close()
+  }
+})
+
+
+
+// Specials filter
+
+const navLinks = document.querySelectorAll(".nav-link")
+const tabs = document.querySelectorAll(".tab")
+
+//! adding event listener to navigation links
+
+navLinks.forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault()
+    navLinks.forEach(nav => nav.classList.remove("active"))
+    tabs.forEach(pane => pane.classList.remove("active"))
+    this.classList.add("active")
+    const targetTabId = this.getAttribute("href").substring(1)
+    const targetTab = document.getElementById(targetTabId)
+    if (targetTab) {
+      targetTab.classList.add("active")
+    }
+  });
+});
+
+
+
+// Menu filter
 const buttons = {
   all: document.getElementById("all"),
   starters: document.getElementById("starters"),
@@ -16,17 +82,18 @@ function filterMenu(category) {
   });
 }
 
-
 Object.entries(buttons).forEach(([category, btn]) => {
   btn.addEventListener("click", () => {
     filterMenu(category)
-    setActiveButton(btn)
   })
-})
+});
 
 
 filterMenu("all")
-setActiveButton(buttons.all)
+
+
+
+
 
 
 

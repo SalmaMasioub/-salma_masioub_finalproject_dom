@@ -50000,6 +50000,53 @@ nav a:hover {
   background-color: #CDA45E !important;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  background-color: #0c0b09;
+  border: 1px solid #37332a;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #CDA45E;
+  outline: none;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 428px) {
   * {
     margin: 0;
@@ -50148,7 +50195,7 @@ h3, .h3, .footer-contact, .footer-col {
   font-family: playfair display;
 }
 
-.menuSection, .reservationSection, .contactSection, footer {
+.menuSection, .reservationSection, .contactSection, footer, .specialsSection {
   background-color: #0c0b09;
 }
 
@@ -50237,6 +50284,23 @@ input[type=date]::placeholder {
   opacity: 0;
   transform: translateY(10px);
   display: none;
+}
+
+.nav-tabs {
+  border-right: 3px solid #cda45e;
+}
+
+.nav-link.active {
+  color: black !important;
+  background-color: #cda45e !important;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
 }
 
 @media (max-width: 428px) {

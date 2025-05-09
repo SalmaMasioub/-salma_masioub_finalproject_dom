@@ -34,7 +34,6 @@
 }
 
 .hero{
-    // position: absolute;
     z-index: 5 !important;
 }
 
@@ -145,7 +144,7 @@ h3 , .footer-contact, .footer-col{
 }
 
 
-.menuSection , .reservationSection ,.contactSection , footer{
+.menuSection , .reservationSection ,.contactSection , footer ,.specialsSection{
 background-color: #0c0b09;
 }
 
@@ -250,8 +249,32 @@ color: white !important;
 
 
 
+.nav-tabs{
+  border-right: 3px solid $gold;
+}
+
+.nav-link.active{
+  color: black !important;
+  background-color: $gold !important;
+} 
+
+.tab {
+    display: none;
+  }
+  .tab.active {
+    display: block;
+  }
 
 
+
+
+
+
+
+
+
+
+  
 
 @media (max-width: 428px) {
   .imgAbout{
