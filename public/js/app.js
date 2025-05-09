@@ -95,5 +95,24 @@ filterMenu("all")
 
 
 
+const nav = document.getElementById("nav")
+const header = document.getElementById("header")
+const label = document.getElementById("label")
+const labelfalse = document.getElementById("false")
+const body = document.body
+
+label.addEventListener("click", () => {
+    nav.style.left = "1vh"
+    body.style.overflow = "hidden"
+    body.classList.add("ag")
+})
 
 
+labelfalse.addEventListener("click", () => {
+    nav.style.left = "-100vw"
+    body.style.overflow = "auto"
+    body.classList.remove("ag")
+})
+
+
+let currentcaro = 0;

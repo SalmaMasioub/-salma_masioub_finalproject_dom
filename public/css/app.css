@@ -50119,7 +50119,7 @@ nav a:hover {
   color: rgb(192, 188, 188) !important;
 }
 
-.aboutSection {
+.aboutSection, .carou {
   position: relative;
   min-height: 100vh;
   background-image: url(../../../../../public/images/about.jpg);
@@ -50137,6 +50137,10 @@ nav a:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5647058824);
   position: absolute;
+}
+
+.carou {
+  background-image: url(../../../../../public/images/events-bg.jpg);
 }
 
 .content {
@@ -50369,6 +50373,31 @@ input[type=date]::placeholder {
   color: #fff;
   font-size: 18px;
   transition: color 0.3s;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keep aspect ratio and cover entire area */
+  transition: transform 0.3s ease; /* Transition for zooming */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+.bi-check2-circle {
+  color: #cda45e !important;
 }
 
 @media (max-width: 428px) {
